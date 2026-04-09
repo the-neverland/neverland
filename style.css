@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0512;
+  font-family: 'Inter', sans-serif;
+  color: #f0eaff;
+  scroll-behavior: smooth;
+}
+
+/* ========== FUNDO NEVERLAND ========== */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at 30% 10%, #0f071b, #020005);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(160, 100, 255, 0.3);
+}
+
+.hero-statue-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/neverland roxo.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+  filter: grayscale(0.6) sepia(0.3);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #02000ae6, #0a021cd9);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 2rem;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  background: linear-gradient(135deg, #f5e6ff, #d6aaff, #b87eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 20px #9a4eff50;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #cdb2ff;
+  border-top: 1px solid #a56eff;
+  border-bottom: 1px solid #a56eff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.hero-quote {
+  font-style: italic;
+  font-size: 1.35rem;
+  max-width: 650px;
+  margin: 1.2rem auto;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(5px);
+  padding: 1rem 1.8rem;
+  border-radius: 60px;
+  border-left: 5px solid #c58eff;
+  color: #f2e5ff;
+  font-weight: 400;
+}
+
+.hero-quote i {
+  color: #c58eff;
+  margin-right: 8px;
+}
+
+/* container padrão */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 2rem 3rem;
+}
+
+section {
+  margin-bottom: 4.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(120deg, #e2c2ff, #b271ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-left: 6px solid #bc7aff;
+  padding-left: 1.2rem;
+}
+
+/* Cards de Gincanas Literárias */
+.gincanas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.gincana-card {
+  background: #130c22dd;
+  backdrop-filter: blur(8px);
+  border-radius: 2rem;
+  padding: 2rem 1.5rem;
+  flex: 1;
+  min-width: 260px;
+  text-align: center;
+  border: 1px solid #a06eff;
+  transition: all 0.3s ease;
+}
+
+.gincana-card:hover {
+  transform: translateY(-8px);
+  border-color: #daaaff;
+  box-shadow: 0 20px 35px -10px #9b4eff80;
+}
+
+.gincana-card i {
+  font-size: 2.5rem;
+  color: #c58eff;
+  margin-bottom: 1rem;
+}
+
+.gincana-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.gincana-card p {
+  color: #e0ccff;
+  margin-bottom: 1rem;
+}
+
+.btn-gincana {
+  background: #7d3ac1;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-gincana:hover {
+  background: #a15eff;
+}
+
+/* Bingo Literário */
+.bingo-container {
+  background: linear-gradient(145deg, #140b24, #090113);
+  border-radius: 2rem;
+  padding: 2rem;
+  border: 2px solid #bc7eff;
+}
+
+.bingo-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bingo-header h3 {
+  font-size: 1.8rem;
+  color: #e2c2ff;
+}
+
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.8rem;
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+}
+
+.bingo-cell {
+  background: #2a1a44;
+  border-radius: 12px;
+  padding: 0.8rem 0.3rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #a56eff;
+  color: #f0eaff;
+}
+
+.bingo-cell.marked {
+  background: #9a4eff;
+  color: white;
+  text-decoration: line-through;
+  border-color: #e2c2ff;
+  box-shadow: 0 0 8px #c58eff;
+}
+
+.bingo-cell:hover {
+  background: #6b3bc0;
+}
+
+.bingo-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn-bingo {
+  background: #7d3ac1;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-bingo:hover {
+  background: #a15eff;
+}
+
+.sorteio-numero {
+  background: #00000077;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Cards Administradores */
+.adm-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.adm-card {
+  background: #130c22dd;
+  backdrop-filter: blur(8px);
+  border-radius: 2rem;
+  width: 260px;
+  padding: 1.3rem 0.8rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #b073ff66;
+}
+
+.adm-card:hover {
+  transform: translateY(-8px);
+}
+
+.princess-img {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #cb9eff;
+  background: #1f1235;
+}
+
+.princess-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.adm-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5eaff;
+}
+
+.adm-phrase {
+  font-size: 0.85rem;
+  background: #00000077;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: 30px;
+  margin-top: 8px;
+}
+
+/* Livro do Mês 3D */
+.livro-mes-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(135deg, #130b24, #070111);
+  border-radius: 2.5rem;
+  padding: 2rem;
+  border: 1px solid #7e48cf;
+}
+
+.floating-book {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  perspective: 800px;
+}
+
+.book-3d {
+  width: 220px;
+  animation: floatBook 4s ease-in-out infinite;
+}
+
+.book-3d img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 25px 35px -12px black, 0 0 0 2px rgba(200, 150, 255, 0.6);
+  transform: rotateY(5deg) rotateX(3deg);
+  transition: 0.3s;
+}
+
+@keyframes floatBook {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.sinopse-box {
+  flex: 1.5;
+  background: #0a0218b3;
+  padding: 1.8rem;
+  border-radius: 1.8rem;
+  border-left: 6px solid #c282ff;
+}
+
+/* Carrossel de Livros */
+.carousel-track {
+  display: flex;
+  gap: 1.8rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0.5rem 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: #b77eff #2a1a44;
+}
+
+.carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background: #2a1a44;
+  border-radius: 10px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: #b77eff;
+  border-radius: 10px;
+}
+
+.book-card {
+  min-width: 180px;
+  background: #170e29aa;
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #a56eff;
+}
+
+.book-card img {
+  width: 130px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.book-card h4 {
+  margin: 0.7rem 0 0.2rem;
+  font-size: 1rem;
+}
+
+/* Declaração da Fundadora */
+.fundadora-box {
+  background: linear-gradient(145deg, #140b24, #090113);
+  border-radius: 2rem;
+  padding: 2rem;
+  border: 2px solid #bc7eff;
+}
+
+.fundadora-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #8b5cf6;
+  padding-bottom: 1rem;
+}
+
+.fundadora-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #c58eff, #7d3ac1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.fundadora-texto {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.fundadora-texto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.fundadora-texto::-webkit-scrollbar-track {
+  background: #2a1a44;
+  border-radius: 10px;
+}
+
+.fundadora-texto::-webkit-scrollbar-thumb {
+  background: #b77eff;
+  border-radius: 10px;
+}
+
+.fundadora-texto p {
+  margin-bottom: 1rem;
+}
+
+/* Depoimentos */
+.depoimentos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.depoimento-card {
+  background: #0c041dcc;
+  backdrop-filter: blur(5px);
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+  width: 300px;
+  border: 1px solid #936eff;
+}
+
+.depoimento-card i {
+  color: #c58eff;
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #5936a3;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 780px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero-content {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .fundadora-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bingo-grid {
+    gap: 0.4rem;
+  }
+  .bingo-cell {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.2rem;
+  }
+}
+/* Estilos para o texto poético do NEVERLAND */
+.neverland-poetic-text {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.neverland-poetic-text pre {
+  font-family: 'Inter', monospace;
+  font-size: 0.85rem;
+  color: #e0ccff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-link-box {
+  text-align: center;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ae4ddb, #270225);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-link-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #075e5480;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #6e0566;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.btn-whatsapp i {
+  font-size: 1.5rem;
+}
+
+.btn-whatsapp:hover {
+  background: #128c7e;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(211, 37, 196, 0.4);
+}
+
+.link-hint {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+  color: #d4c2ff;
+  word-break: break-all;
+}
+
+/* Responsividade para o texto poético */
+@media (max-width: 780px) {
+  .neverland-poetic-text pre {
+    font-size: 0.65rem;
+  }
+  
+  .btn-whatsapp {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .btn-whatsapp i {
+    font-size: 1.2rem;
+  }
+}

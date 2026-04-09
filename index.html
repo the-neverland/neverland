@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>NEVERLAND · Gincanas & Bingo Literário</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO COM ESTÉTICA INSPIRADA NA IMAGEM -->
+<div class="hero">
+  <div class="neverland"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tagline">✦ Biblioteca ✦</div>
+    <h1>NEVERLAND</h1>
+    <div class="hero-quote">
+      <i class="fas fa-feather-alt"></i> "O neverland foi criado para que as pessoas tenham um lugar de conforto para falar abertamente sobre suas leituras"
+    </div>
+    <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8; letter-spacing: 1px;">
+      <i class="fas fa-tree"></i> Onde cada página vira um abraço
+    </p>
+  </div>
+</div>
+
+<div class="container">
+  <!-- SEÇÃO: GINCANAS LITERÁRIAS -->
+  <section>
+    <h2 class="section-title"><i class="fas fa-gamepad"></i> Gincanas Literárias</h2>
+    <div class="gincanas-grid">
+      <div class="gincana-card">
+        <i class="fas fa-tasks"></i>
+        <h3>Maratona de Leitura</h3>
+        <p>Desafios diários de páginas, metas coletivas e premiações especiais para quem mais ler durante as férias.</p>
+        <button class="btn-gincana" onclick="alert('Venha participar de uma Maratona de Leitura!📚')">Venha participar de uma Maratona de Leitura!📚</button>
+      </div>
+      <div class="gincana-card">
+        <i class="fas fa-users"></i>
+        <h3>Jogos em Equipe</h3>
+        <p>Forme seu time e dispute provas de conhecimento literário, caça-palavras e desafios cronometrados.</p>
+        <button class="btn-gincana" onclick="alert('Fique de olho e Participe de um Time! 🎮')">Fique de olho e Participe de um Time! 🎮</button>
+      </div>
+      <div class="gincana-card">
+        <i class="fas fa-puzzle-piece"></i>
+        <h3>Caça ao Tesouro Literário</h3>
+        <p>Pistas escondidas pelo grupo, enigmas sobre livros e prêmios para quem decifrar primeiro.</p>
+        <button class="btn-gincana" onclick="alert('Caça ao tesouro liberada! 🗺️')">Caça ao tesouro liberada! 🗺️</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO: BINGO LITERÁRIO INTERATIVO -->
+  <section>
+    <h2 class="section-title"><i class="fas fa-dice"></i> Bingo Literário</h2>
+    <div class="bingo-container">
+      <div class="bingo-header">
+        <h3><i class="fas fa-book-open"></i> Cartela de Bingo</h3>
+        <p>Marque os livros que você já leu ou desafios cumpridos!.</p>
+      </div>
+      <div id="bingoGrid" class="bingo-grid"></div>
+      <div class="bingo-controls">
+    </div>
+  </section>
+
+  <!-- ADMINISTRADORES -->
+<section>
+    <h2 class="section-title"><i class="fas fa-user-astronaut"></i> Guardiões da Imaginação</h2>
+<div class="adm-grid">
+  <div class="adm-card">
+    <div class="princess-img">
+      <img src="image/kath.jpg" alt="Kath">
+    </div>
+    <div class="adm-name">Kath</div>
+    <div class="adm-phrase"> Enciclopédia viva</div>
+  </div>
+
+  <div class="adm-card">
+    <div class="princess-img">
+      <img src="image/joao.jpg" alt="João">
+    </div>
+    <div class="adm-name">João</div>
+    <div class="adm-phrase"> O cara das edições</div>
+  </div>
+
+  <div class="adm-card">
+    <div class="princess-img">
+      <img src="image/amanda.jpg" alt="Amanda">
+    </div>
+    <div class="adm-name">Amanda</div>
+    <div class="adm-phrase"> Central de Ideias</div>
+  </div>
+  <div class="adm-card">
+    <div class="princess-img">
+      <img src="image/lua.jpg" alt="Lua">
+    </div>
+    <div class="adm-name">Lua</div>
+    <div class="adm-phrase"> A Fundadora</div>
+  </div>
+</div>
+ </section>
+
+  <!-- DECLARAÇÃO DA FUNDADORA -->
+  <section>
+    <h2 class="section-title"><i class="fas fa-heart"></i> A história do Neverland</h2>
+    <div class="fundadora-box">
+      <div class="fundadora-header">
+        <div class="fundadora-avatar"><i class="fas fa-star-of-life"></i></div>
+        <div><h2 style="color:#e2c2ff;">Lua · Fundadora</h2><p><i class="fas fa-calendar-alt"></i> 04 de agosto de 2023 · 3 anos de amor literário</p></div>
+      </div>
+      <div class="fundadora-texto">
+        <p>O Neverland é um clube do livro digital que eu criei no dia 04 de agosto de 2023. Ele nasceu de um jeito bem simples, sem grandes planos. Na época, eu tinha sido expulsa de um outro grupo de leitura e senti vontade de ter um cantinho onde eu pudesse continuar compartilhando leituras com algumas pessoas que também tinham saído de lá. No começo, eram menos de 10 pessoas, bem pequeno mesmo, só um grupinho.</p>
+        <p>Com o tempo, as coisas foram acontecendo de forma muito natural. Mais gente foi chegando, as conversas foram crescendo e, quando eu percebi, o Neverland já tinha se tornado algo muito maior do que eu imaginei. Hoje ele é um espaço muito especial, não só pela leitura, mas pelas conexões que a gente criou ali dentro.</p>
+        <p>Pra mim, o Neverland significa muito. A leitura foi algo que eu fui descobrindo aos poucos e que acabou virando uma paixão enorme. E ter um espaço onde eu posso compartilhar isso com outras pessoas, trocar ideias, conversar sobre tudo e dar risada… é muito importante. Hoje eu realmente não me vejo sem o Never. É um lugar de acolhimento, amizade, aprendizado e leveza.</p>
+        <p>Sobre a administração, hoje o Neverland é cuidado por mim, pela Amanda, pela Kath e pelo João. Eu sou a Lua, a fundadora, e apesar de não ter muita prática com organização, eu sempre tento ajudar como posso. A gente tem, por exemplo, a nossa gincana de férias, que acontece geralmente entre dezembro e fevereiro, com jogos, maratonas literárias, bingo e várias atividades em equipe.</p>
+        <p>A Amanda também está sempre junto, me ajudando e apoiando em tudo. O João é o nosso ADM mais novo, entrou na direção em 2026, e hoje ele é essencial principalmente na parte de design. A Kath está comigo desde o começo, desde o início da direção. Ela é a administradora mais antiga junto comigo e está sempre presente em tudo.</p>
+        <p>Eu tenho muita gratidão por todos eles, porque sinceramente, sozinha eu não conseguiria manter o Neverland do jeito que ele é hoje. Em agosto de 2026, o Neverland completa 3 anos, e pra mim isso é muito significativo. É a prova de tudo que a gente construiu juntos. Eu amo esse lugar de todo o meu coração.</p>
+        <div style="text-align: right; margin-top: 1rem; color:#c58eff;"><i class="fas fa-feather-alt"></i> Com carinho, Lua</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVRO DO MÊS -->
+  <section>
+    <h2 class="section-title"><i class="fas fa-moon"></i> Livro do Mês</h2>
+    <div class="livro-mes-area">
+      <div class="floating-book"><div class="book-3d"><img src="image/janela sombria.jpg" alt="Uma Janela Sombria" onerror="this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=400&fit=crop'"></div></div>
+      <div class="sinopse-box"><h3>🪟 Uma Janela Sombria</h3><p><strong>Rachel Gilling</strong></p><p>Em uma mansão envolta por névoas eternas, Lena descobre uma janela que só aparece nas noites de lua nova. Do outro lado, um mundo sombrio reflete seus medos mais profundos — e a única saída é enfrentar verdades que ela mesma esqueceu. Mistério psicológico e atmosfera única.</p><div class="autor-livro"><i class="fas fa-feather-alt"></i> Edição Clube NEVERLAND</div></div>
+    </div>
+  </section>
+
+  <!-- CARROSSEL DE LIVROS EM DESTAQUE -->
+  <section>
+    <h2 class="section-title"><i class="fas fa-bookmark"></i> Desafio Literário - 2025</h2>
+    <div class="carousel-track" id="carouselTrack">
+      <div class="book-card"><img src="image/de ferias com voce.jpg" alt="de ferias com voce"><h4>De Ferias com Você - Emily Henry</h4><small> JANEIRO</small></div>
+      <div class="book-card"><img src="image/os garotos do cem.jpg" alt="os garotos do cem"><h4>Os Garotos do Cemitério - Aiden Thomas</h4><small> FEVEREIRO</small></div>
+      <div class="book-card"><img src="image/o livro das portas.jpg" alt="O Livro das Portas"><h4>O Livro das Portas - Gareth Brown</h4><small>MARÇO</small></div>
+      <div class="book-card"><img src="image/o massacre da familia hope.jpg" alt="O Massacre da Família Hope"><h4>O Massacre da Família Hope - Riley Sager</h4><small>ABRIL</small></div>
+      <div class="book-card"><img src="image/a extraórdinaria cozinha dos livros.jpg" alt="a extraor"><h4>A Extraordinária Cozinha dos Livros - Kim Jee-Hye</h4><small>MAIO</small></div>
+      <div class="book-card"><img src="image/meu assassinato.jpg" alt="Meu Assassinato"><h4>Meu Assassinato - Katie Williams</h4><small>JUNHO</small></div>
+      <div class="book-card"><img src="image/sem coração.jpg" alt="Sem Coração"><h4>Sem Coração - Marissa Meyer</h4><small>JULHO/AGOSTO</small></div>
+      <div class="book-card"><img src="image/nossos eternos destinos.jpg" alt="Nossos Eternos Destinos"><h4>Nossos Eternos Destinos - Colleen Hoover</h4><small>SETEMBRO/OUTUBRO</small></div>
+       <div class="book-card"><img src="image/enrolada em você.jpg" alt="Enrolada em Você"><h4>Enrolada em Você - Colleen Hoover</h4><small>NOVEMBRO/DEZEMBRO</small></div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section>
+    <h2 class="section-title"><i class="fas fa-comment-dots"></i> O que a comunidade diz</h2>
+    <div class="depoimentos-grid">
+      <div class="depoimento-card"><i class="fas fa-quote-left"></i> "O Nerveland pra mim é um presente que foi muito bem vindo, pois conheci pessoas incríveis. É um grupo que traz conforto e um respiro da rotina do dia a dia com os desafios de leitura e as gincanas, como por exemplo as gincanas de férias que eu amei participar. 💖" <br><strong>— Luh.</strong></div>
+      <div class="depoimento-card"><i class="fas fa-quote-left"></i> "O nerver é realmente uma "segunda casa" pra mim, pq eu tenho um carinho enorme por todas as pessoas que eu conheci naquele rpg e que agr continuam na minha vida por causa do never, e além disso, ler é a minha coisa favorita do mundo, e é mt legal conversar com outras pessoas que tem o mesmo carinho pela leitura que vc, eu amo poder conversar, nn so sobre livros, mas sobre a vida também com vcs. eu amo os desafios de leitura, pq fazem eu sair da minha zona de conforto e descobrir novos livros que eu nunca iria ler se nn fosse pelos desafios, e eu acho tudo poder debater minhas opiniões/ ideias com outras pessoas, cada atividade é super divertida e desafiadora (como o bingo que eu amei, mas tbm me fez surtar). enfim, eu amo dms o never, tenho um carinho enorme por ele e pelas pessoas que estão nele." <br><strong>— Julia.</strong></div>
+      <div class="depoimento-card"><i class="fas fa-quote-left"></i> "O Neverland, pra mim, significa um desbloqueio de hábitos que eu sempre quis ter. Durante a minha adolescência inteira eu quis ser leitor, mas nunca me sentia realmente motivado a isso. Só quando adulto encontrei o Neverland e foi um divisor de águas na minha vida pois, através dessa comunidade, consegui me desafiar a começar na leitura e mesmo com todas as dificuldades, consegui realizar algumas delas. Ainda não estou como queria estar, mas o Neverland com certeza é o caminho certo para me ajudar a alcançar esse objetivo. Obrigado por tudo! 💜" <br><strong>— Ramon.</strong></div>
+    <div class="depoimento-card"><i class="fas fa-quote-left"></i> "O Never é um dos poucos grupos em que eu ainda estou e onde posso compartilhar muitas coisas da minha vida, são meus melhores amigos nessa nova fase e sempre estão ali pra me ouvir (as vezes me ignoram, mas blz). 
+O desafio de leitura, assim como as demais dinâmicas, sempre me impulsionaram muito a avançar com livros (alguns que eu já queria e outros que eu nem sabia que eram tão bons, mas me indicaram ali) e o maior exemplo disso é que de uma meta de ler 10 livros o ANO TODO, só em Janeiro eu li quase o dobro disso, sendo sempre incentivada de uma maneira majestosa pelos companheiros de equipe e adms. 
+Faz muito tempo que falo com algumas pessoas dali, que conheço e tudo, mas ainda me surpreendo no quanto o Never significa pra mim, mesmo de tão longe. Sou muito grata por fazer parte e não ter levado ban até hoje 💕💕💫"  <br><strong>— Suh.</strong></div>
+    </div>
+  </section>
+
+<!-- NEVERLAND - SEÇÃO PRINCIPAL COM LINK DO WHATSAPP -->
+<section>
+  <h2 class="section-title"><i class="fas fa-moon"></i> NEVERLAND · O seu refúgio</h2>
+  <div class="livro-mes-area">
+    <div class="floating-book">
+      <div class="book-3d">
+        <img src="image/neverland roxo.jpg" alt="Neverland Roxo" onerror="this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=400&fit=crop'">
+      </div>
+    </div>
+    <div class="sinopse-box">
+      <h3>🪟 O lugar que você tem buscado</h3>
+      <p><strong>para ser o seu refúgio</strong></p>
+      
+      <div class="neverland-poetic-text">
+        <pre>
+╭── ⋆ ࣪.📖⊹ ┈┈┈┈┈┈┈──────────╮
+
+          ⋆₊˚. NᥱʋᥱɾꙆᥲᥒᑯ ⋆₊˚.
+        · · A BɩᑲꙆɩotᥱᥴᥲ Pᥱɾᑯɩᑯᥲ · ·
+
+  Oᥙçᥲ o ᥴhᥲmᥲdo dᥲs fᥲdᥲs ᥱ ᥲvᥱᥒtᥙrᥱ-sᥱ ᥱm mᥱιo ᥲos ᥣᥙgᥲrᥱs mᥲ́gιᥴos 
+  ρroρorᥴιoᥒᥲdos ᥲtrᥲvᥱ́s dᥲ ᥣᥱιtᥙrᥲ.
+
+  Sᥱ forᥱs dιgᥒo dᥱ mᥱrgᥙᥣhᥲr ᥒo mᥲιs ρrofᥙᥒdo oᥴᥱᥲᥒo ᥱ ᥲtᥱ́ fᥣᥙtᥙᥲr ᥒᥲ mᥲιs ᥲᥣtᥲ ᥒᥙvᥱm, 
+  ᥴomo os soᥒhᥲdorᥱs, ᥱᥒᥴoᥒtrᥱ ᥲs ᥴrιᥲᥒᥴ̧ᥲs ρᥱrdιdᥲs.
+
+✨ · Sᥱgᥙᥒdᥲ ᥱstrᥱᥣᥲ mᥲιs brιᥣhᥲᥒtᥱ, ᥲ̀ dιrᥱιtᥲ, ᥱ dιrᥱto ᥲtᥱ́ o ᥲmᥲᥒhᥱᥴᥱr.
+        </pre>
+      </div>
+      
+      <!-- LINK DO WHATSAPP CLICÁVEL -->
+      <div class="whatsapp-link-box">
+        <a href="https://chat.whatsapp.com/GL7T5qFeynjDPTfeFtiM0r" target="_blank" class="btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Clique aqui para entrar no grupo do WhatsApp
+        </a>
+        <p class="link-hint">🔗 Link convite: https://chat.whatsapp.com/GL7T5qFeynjDPTfeFtiM0r</p>
+      </div>
+      
+      <div class="autor-livro">
+        <i class="fas fa-feather-alt"></i> Edição Clube NEVERLAND
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p><i class="fas fa-tree"></i> seja bem vinda(o)!</p>
+    <p style="margin-top: 6px;">✨ Participe das nossas atividades e divirta-se! ✨</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
