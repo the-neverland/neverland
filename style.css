@@ -388,6 +388,53 @@ section {
   border-left: 6px solid #c282ff;
 }
 
+/* Carrossel de Livros 1 */
+.carousel-track {
+  display: flex;
+  gap: 1.8rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0.5rem 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: #b77eff #2a1a44;
+}
+
+.carousel-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carousel-track::-webkit-scrollbar-track {
+  background: #2a1a44;
+  border-radius: 10px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: #b77eff;
+  border-radius: 10px;
+}
+
+.book-card {
+  min-width: 180px;
+  background: #170e29aa;
+  backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #a56eff;
+}
+
+.book-card img {
+  width: 130px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.book-card h4 {
+  margin: 0.7rem 0 0.2rem;
+  font-size: 1rem;
+}
+
 /* Carrossel de Livros */
 .carousel-track {
   display: flex;
