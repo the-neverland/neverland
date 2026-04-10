@@ -1,12 +1,8 @@
-// Bingo Literário - Cartela com 25 desafios/livros
+// Bingo Literário - Cartela com 09 desafios/livros
 const bingoItems = [
-  "📖 Ler 50 páginas", "🎭 Personagem favorito", "✨ Livro com capa roxa", "📚 Clássico nacional",
-  "🕯️ Livro de fantasia", "🔍 Mistério resolvido", "🗡️ Heroína inspiradora", "🏆 Maratona concluída",
-  "🎲 Sorteio especial", "💬 Participar de debate", "📝 Escrever resenha", "🎨 Arte do João",
-  "🌸 Indicação da Amanda", "👁️ Dica da Kath", "👑 Desafio da Lua", "📖 Finalizar um livro",
-  "🎉 Bingo Literário", "🌟 Livro do mês", "🎧 Audiolivro", "📱 Post no Instagram",
-  "🎁 Ganhar marcador", "🤝 Ajudar um membro", "📚 Emprestar livro", "⭐ Avaliar 5 estrelas",
-  "🎯 Cumprir meta semanal"
+  "📖 Um livro com personagem Moral Cinza","✨ Um livro que tenha as mesmas iniciais que você", "📚 Um livro escrito antes de 1900",
+  "🗡️ Um livro com título de uma palavra só", "🏆 Um livro publicado em 2025", "🎲 Um mangá, manhwa, novel ou HQ", 
+  "🌸 Um livro em que os Personagens tenham Pets","📖 Um livro originado de uma fanfic","🌟 Um livro escrito em um fotmato não tradicional"
 ];
 
 let markedState = new Array(25).fill(false);
