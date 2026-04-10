@@ -1,7 +1,7 @@
 // Bingo Literário - Cartela com 09 desafios/livros
 const bingoItems = [
-  "📖 Um livro com personagem Moral Cinza","✨ Um livro que tenha as mesmas iniciais que você", "📚 Um livro escrito antes de 1900",
-  "🗡️ Um livro com título de uma palavra só", "🏆 Um livro publicado em 2025", "🎲 Um mangá, manhwa, novel ou HQ", 
+  "📖 Um livro com personagem Moral Cinza","✨ Um livro que tenha as mesmas iniciais que você", "📚 Um livro escrito antes de 1900"
+  "🗡️ Um livro com título de uma palavra só", "🏆 Um livro publicado em 2025", "🎲 Um mangá, manhwa, novel ou HQ"
   "🌸 Um livro em que os Personagens tenham Pets","📖 Um livro originado de uma fanfic","🌟 Um livro escrito em um fotmato não tradicional"
 ];
 
