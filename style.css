@@ -198,43 +198,31 @@ section {
   background: #a15eff;
 }
 
-/* Bingo Literário */
-.bingo-container {
-  background: linear-gradient(145deg, #140b24, #090113);
-  border-radius: 2rem;
-  padding: 2rem;
-  border: 2px solid #bc7eff;
-}
-
-.bingo-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.bingo-header h3 {
-  font-size: 1.8rem;
-  color: #e2c2ff;
-}
-
+/* Bingo Grid - 3x3 */
 .bingo-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.8rem;
-  max-width: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 800px;
   margin: 0 auto 1.5rem;
 }
 
 .bingo-cell {
   background: #2a1a44;
-  border-radius: 12px;
-  padding: 0.8rem 0.3rem;
+  border-radius: 16px;
+  padding: 1rem 0.5rem;
   text-align: center;
   font-weight: bold;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: 0.2s;
-  border: 1px solid #a56eff;
+  transition: all 0.2s ease;
+  border: 2px solid #a56eff;
   color: #f0eaff;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
 }
 
 .bingo-cell.marked {
@@ -242,13 +230,26 @@ section {
   color: white;
   text-decoration: line-through;
   border-color: #e2c2ff;
-  box-shadow: 0 0 8px #c58eff;
+  box-shadow: 0 0 12px #c58eff;
 }
 
 .bingo-cell:hover {
   background: #6b3bc0;
+  transform: scale(1.02);
 }
 
+/* Responsividade para mobile */
+@media (max-width: 780px) {
+  .bingo-grid {
+    gap: 0.6rem;
+  }
+  
+  .bingo-cell {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.3rem;
+    min-height: 70px;
+  }
+}
 .bingo-controls {
   display: flex;
   gap: 1rem;
